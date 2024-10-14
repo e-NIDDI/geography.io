@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Light background for modern look */
+}
+
+header {
+    text-align: center; /* Center the header content */
+    background: #003d00; /* Darker Green */
+    color: white;
+    padding: 15px;
+    position: relative; /* Position for the menu */
+}
+
+header .logo {
+    font-size: 26px; /* Slightly larger logo font */
+    font-weight: bold;
+}
+
+.hamburger {
+    font-size: 24px; /* Hamburger icon size */
+    cursor: pointer;
+    display: none; /* Hidden by default, shown on mobile */
+}
+
+nav {
+    display: flex; /* Flex layout for nav */
+    justify-content: center; /* Center nav items */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Flexible layout for nav links */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Padding around nav items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3); /* Hover effect */
+}
+
+.hero {
+    background: linear-gradient(to right, #007acc, #ffbb00); /* Bright Blue and Yellow */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 40px); /* Full width minus padding */
+    max-width: 600px; /* Max width for larger screens */
+    padding: 12px 20px; /* Padding for the input */
+    margin: 20px auto; /* Centered on the page */
+    border: 2px solid #007acc; /* Border color */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 16px; /* Font size for input text */
+    outline: none; /* No outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
+}
+
+input[type="text"]:focus {
+    border-color: #ffbb00; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(255, 187, 0, 0.8); /* Glow effect */
+}
+
+button {
+    background-color: #ffbb00; /* Yellow */
+    color: #003d00; /* Dark Green */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Smooth rounded button */
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #ffd700; /* Slightly brighter yellow on hover */
+}
+
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    color: #005f5f; /* Medium Green */
+}
+
+.place {
+    background: #e0f7fa; /* Light Blue */
+    border: 1px solid #007acc; /* Adjusting border color */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.place img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background: #003d00;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* CSS for the hamburger menu */
+#navbar {
+    display: none; /* Initially hide the navbar */
+    flex-direction: column; /* Vertical layout */
+    background-color: #003d00; /* Same background color as header */
+    position: absolute; /* Absolute positioning */
+    width: 100%; /* Full width */
+    top: 60px; /* Position below the header */
+}
+
+#navbar.show {
+    display: flex; /* Show the navbar when toggled */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger menu on smaller screens */
+    }
+
+    nav {
+        display: none; /* Hidden initially, shown when clicked */
+    }
+
+    section {
+        padding: 20px 10px; /* Compact padding on smaller screens */
+    }
+
+    h2 {
+        font-size: 24px; /* Slightly smaller font size for headings */
+    }
+}

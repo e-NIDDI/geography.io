@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukuria e Jugut të Evropës</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Jugu i Evropës</div>
+        <div class="hamburger" id="hamburger">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#about">Rreth Nesh</a></li>
+                <li><a href="#places">Vendet e Bukura</a></li>
+                <li><a href="#contact">Kontakti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Zbuloni Bukurinë e Jugut të Evropës</h1>
+        <p>Eksploroni thesaret e fshehura dhe peisazhet mahnitëse të Jugut të Evropës.</p>
+    </section>
+
+    <section id="about">
+        <h2>Rreth Jugut të Evropës</h2>
+        <p>Jugu i Evropës ofron disa nga peisazhet më magjepsëse në botë, të karakterizuara nga plazhet e bukura, kultura e gjallë dhe historia e pasur. Të ndikuar nga klima mesdhetare, vendet e Jugut të Evropës, si Shqipëria, Greqia, Italia, dhe Spanja, janë të njohura për rritjen e kulturave të ndryshme dhe traditave të pasura. Ky rajon është gjithashtu i njohur për gastronominë e tij të jashtëzakonshme dhe mikpritjen tradicionale.</p>        
+        <p>Me qytete historike si Roma dhe Athina dhe natyrë të mrekullueshme, si plazhet e Riviera Shqiptare dhe malet e Alpeve Shqiptare, Jug i Evropës ofron një eksperiencë të veçantë për çdo udhëtar. Çdo vend ka bukurinë e tij unike - nga arkitektura antike dhe historia e pasur, te natyra mahnitëse dhe traditat e gjalla - duke e bërë këtë rajon një destinacion imperativ për të gjithë ata që duan të eksplorojnë. Për më tepër, shijimi i ushqimeve tradicionale mesdhetare në tavernat lokale, vizita në festivalet kulturore dhe ndjesia e ngrohtësisë të njerëzve janë përvoja që nuk duhen humbur.</p>
+    </section>
+
+    <section id="places">
+        <h2>Vendet më të Bukura në Jug të Evropës</h2>
+        <input type="text" id="search-input" placeholder="Kërko vendet..." onkeyup="searchPlaces()" />
+        <div id="place-list">
+            <div class="place">
+                <h3>Riviera Shqiptare</h3>
+                <img src="images/riviera.jpg" alt="Riviera Shqiptare">
+                <p>Shijoni plazhet e pacenuara dhe qytetet e bukura të Riviera Shqiptare, të njohura për ujërat e tyre kristal dhe jetën vibrante të natës.</p>
+            </div>
+            <div class="place">
+                <h3>Berati</h3>
+                <img src="images/berat.jpg" alt="Berat">
+                <p>I njohur si "Qyteti i Një Mijë Dritareve," Berati është famous për arkitekturën e tij antike dhe pamjet mahnitëse mbi lumin Osum.</p>
+            </div>
+            <div class="place">
+                <h3>Shkodra</h3>
+                <img src="images/shkodra.jpg" alt="Shkodra">
+                <p>Kryeqyteti kulturor i Shqipërisë, Shkodra ofron histori të pasur, peisazhe të bukura dhe liqenin e mrekullueshëm të Shkodrës.</p>
+            </div>
+            <div class="place">
+                <h3>Cinque Terre, Itali</h3>
+                <img src="images/cinque_terre.jpg" alt="Cinque Terre">
+                <p>Një grup pesë fshatrash ngjitur me bregdetin, Cinque Terre është i njohur për shtëpitë e tij shumëngjyrëshe dhe peizazhet fantastike detarë.</p>
+            </div>
+            <div class="place">
+                <h3>Santorini, Greqi</h3>
+                <img src="images/santorini.jpg" alt="Santorini">
+                <p>Një nga ishujt më të njohur në botë, Santorini është i famshëm për ndërtesat e tij të bardha dhe perëndimet mahnitëse të diellit.</p>
+            </div>
+            <div class="place">
+                <h3>Dubrovnik, Kroaci</h3>
+                <img src="images/dubrovnik.jpg" alt="Dubrovnik">
+                <p>Një qytet i bukur bregdetar, Dubrovnik është i njohur për muret e tij historike dhe peizazhin e mrekullueshëm të detit Adriatik.</p>
+            </div>
+            <div class="place">
+                <h3>Athina, Greqi</h3>
+                <img src="images/athens.jpg" alt="Athina">
+                <p>Një qytet historik, Athina ofron monumente të jashtëzakonshme si Akropoli dhe një atmosferë të gjallë kulture.</p>
+            </div>
+            <div class="place">
+                <h3>Barcelonë, Spanjë</h3>
+                <img src="images/barcelona.jpg" alt="Barcelonë">
+                <p>Një qytet plot ngjyra dhe art, Barcelonë është e njohur për arkitekturën e saj unike, si Sagrada Família.</p>
+            </div>
+            <div class="place">
+                <h3>Siena, Itali</h3>
+                <img src="images/siena.jpg" alt="Siena">
+                <p>Një qytet tërheqës mesjetar, Siena ofron një shikim të mrekullueshëm të historisë dhe arkitekturës italiane.</p>
+            </div>
+            <div class="place">
+                <h3>Split, Kroaci</h3>
+                <img src="images/split.jpg" alt="Split">
+                <p>Aty ku historia takon plazhin, Split është i njohur për Pallatin e Dioklecianit dhe plazhet e bukura.</p>
+            </div>
+            <div class="place">
+                <h3>Positano, Itali</h3>
+                <img src="images/positano.jpg" alt="Positano">
+                <p>Një nga destinate më të njohura në Amalfi, Positano është i njohur për shtëpitë e tij të ngjyrave dhe rrugët e ngushta të bukura.</p>
+            </div>
+            <div class="place">
+                <h3>Valencia, Spanjë</h3>
+                <img src="images/valencia.jpg" alt="Valencia">
+                <p>Një qytet modern dhe historik, Valencia është e njohur për festivalet e saj dhe arkitekturën futuriste, si qyteti i arteve dhe e shkencave.</p>
+            </div>
+            <div class="place">
+                <h3>Malta</h3>
+                <img src="images/malta.jpg" alt="Malta">
+                <p>Një arkipelag mesdhetar, Malta ofron një përzierje të mrekullueshme të kulturës, historisë, dhe plazheve të mrekullueshme.</p>
+            </div>
+            <div class="place">
+                <h3>Ragusa, Itali</h3>
+                <img src="images/ragusa.jpg" alt="Ragusa">
+                <p>Një qytet historik në Sicili, Ragusa është i njohur për arkitekturën barok dhe pejsazhin e tij të mrekullueshëm.</p>
+            </div>
+            <div class="place">
+                <h3>Chania, Greqi</h3>
+                <img src="images/chania.jpg" alt="Chania">
+                <p>Kryeqyteti i Kretës, Chania ofron një breg të mahnitshëm dhe një qytet të lashtë me influenca veneciane.</p>
+            </div>
+            <div class="place">
+                <h3>Porto, Portugali</h3>
+                <img src="images/porto.jpg" alt="Porto">
+                <p>Një qytet që ofron kulturë të pasur dhe shijen e verës port, Porto është një destinacion popullor për udhëtarët.</p>
+            </div>
+            <div class="place">
+                <h3>Nice, Francë</h3>
+                <img src="images/nice.jpg" alt="Nice">
+                <p>I njohur për plazhet e tij të bukura dhe klimën e ngrohtë, Nice është një destinacion i njohur në Rivierën Franceze.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Kontaktoni me ne: info@jugieeuropes.com</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
